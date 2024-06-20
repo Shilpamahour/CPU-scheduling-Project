@@ -39,11 +39,12 @@ iii)If the ready queue is empty, move to the next time unit until new processes 
 i)After all processes are executed, calculate the waiting time and turnaround time for each process.<br>
 ii)Waiting time = Total time spent in the ready queue (excluding burst time).<br>
 iii)Turnaround time = Waiting time + Burst time.<br>
-#FCFS (First-Come, First-Served)<br>
+# FCFS (First-Come, First-Served)<br>
 i)Arrival: Sort processes by arrival time.<br>
 ii)Execution: Execute processes in the order they arrive.<br>
 iii)Completion: Calculate waiting time and turnaround time for each process.<br>
 iv)Output: Output average waiting time and turnaround time.<br>
+![image](https://github.com/Shilpamahour/CPU-scheduling-Project/assets/132204996/200f1ff3-d1d0-4f09-a7d6-0fe792e87c3d)
 
 Function Explanation<br>
 
@@ -72,6 +73,8 @@ ii)Execution: Select the process with the shortest remaining time among the arri
 iii)Preemption: If a shorter job arrives, preempt the current job.<br>
 iv)Completion: Calculate waiting time and turnaround time for each process.<br>
 v)Output: Output average waiting time and turnaround time.<br>
+![image](https://github.com/Shilpamahour/CPU-scheduling-Project/assets/132204996/575ca53e-f6bf-4d91-b925-0a78a004b344)
+
 Function Explanation<br>
 
 1.Initializing Variables:<br>
