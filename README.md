@@ -15,7 +15,26 @@ Round Robin (RR) is a preemptive scheduling algorithm where each process gets ex
 5.Output: Output average waiting time and turnaround time.
 
 ![image](https://github.com/Shilpamahour/CPU-scheduling-Project/assets/132204996/67e1d107-85a0-48e5-8e46-e5f608c24656)
+#explanation
+1.Initialization:
 
+i)Read the processes and their attributes (PID, burst time, arrival time).
+ii)Initialize the remaining burst time for each process.
+iii)Use a queue to maintain the ready queue of processes.
+2.Queue Maintenance:
+
+i)Add processes to the ready queue as they arrive.
+ii)After executing a process for the given quantum, if it still has remaining burst time, add it back to the ready queue.
+3.Execution Loop:
+
+i)Continuously check the ready queue and execute processes for a fixed time slice (quantum).
+ii)If a process finishes within the time slice, remove it from the ready queue.
+iii)If the ready queue is empty, move to the next time unit until new processes arrive.
+4.Calculate Waiting and Turnaround Times:
+
+i)After all processes are executed, calculate the waiting time and turnaround time for each process.
+ii)Waiting time = Total time spent in the ready queue (excluding burst time).
+iii)Turnaround time = Waiting time + Burst time.
 
 
 
