@@ -97,3 +97,9 @@ vii)The current time is incremented after each time unit of execution.<br>
 
 i)The function calculates the waiting and turnaround times for each process.<br>
 ii)It writes the scheduling results, including the average waiting time, average turnaround time, and a Gantt chart (visual representation of the process execution order), to the output file.<br>
+# SJF (Shortest Job First)
+1.Order processing based on arrival time.<br>
+2. Execution: Among the processes that have arrived, choose the one with the least burst time.<br>
+3.Completion: Determine how long each process will take to complete, including wait times.<br>
+
+4.Output: Average waiting and turnaround times are produced.<br>
