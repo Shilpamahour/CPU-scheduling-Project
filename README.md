@@ -175,9 +175,9 @@ iii.The selection of an algorithm is crucial for maximizing CPU use and response
 # Sources and/or Bibliography
 Abraham Silberschatz, Peter Baer Galvin, and Greg Gagne's Operating System Concepts and their GeeksforGeeks articles on CPU Scheduling Algorithms
 
-# Input Processes:
-Process 1: PID = 1, Burst Time = 5, Arrival Time = 0
-Process 2: PID = 2, Burst Time = 4, Arrival Time = 1
-Process 3: PID = 3, Burst Time = 3, Arrival Time = 2
-Process 4: PID = 4, Burst Time = 6, Arrival Time = 3
-Process 5: PID = 5, Burst Time = 2, Arrival Time = 4
+# Input Processes:<br>
+Process 1: PID = 1, Burst Time = 5, Arrival Time = 0<br>
+Process 2: PID = 2, Burst Time = 4, Arrival Time = 1<br>
+Process 3: PID = 3, Burst Time = 3, Arrival Time = 2<br>
+Process 4: PID = 4, Burst Time = 6, Arrival Time = 3<br>
+Process 5: PID = 5, Burst Time = 2, Arrival Time = 4<br>
