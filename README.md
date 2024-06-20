@@ -72,7 +72,7 @@ ii)Execution: Select the process with the shortest remaining time among the arri
 iii)Preemption: If a shorter job arrives, preempt the current job.<br>
 iv)Completion: Calculate waiting time and turnaround time for each process.<br>
 v)Output: Output average waiting time and turnaround time.<br>
-Function Explanation
+Function Explanation<br>
 
 1.Initializing Variables:<br>
 
