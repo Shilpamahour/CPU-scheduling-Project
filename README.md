@@ -129,3 +129,8 @@ iv. To choose the process with the shortest burst time, the ready_queue is sorte
 v. After the chosen process is carried out, its waiting time is determined by subtracting its arrival time from the current time.<br>
 vi. After execution, the current time is changed and execution information (process ID, start time, end time) are logged.<br>
 vii. Each process's waiting and turnaround times are updated.<br>
+
+4.Writing Results and Calculating Metrics:<br>
+
+i. Each process's waiting and turnaround times are computed using the function.<br>
+ii. The scheduling results are written to the output file, together with a Gantt chart—a visual depiction of the process execution order—and average waiting and turnaround times.<br>
