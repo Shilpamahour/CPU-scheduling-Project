@@ -2,9 +2,9 @@
 # Description
 With the help of this project, users will be able to simulate several CPU scheduling algorithms and assess how well they perform. Numerous well-known scheduling algorithms are implemented, including Round Robin, SJF (Shortest Job First), SRTF (Shortest Remaining Time First), FCFS (First-Come, First-Served), and LJF (Longest Job First).
 # how to run
-1.Clone the repository: git clone 
-2.Compile the code: g++ -o scheduler scheduler.cpp
-3.Run the executable: ./scheduler input.text output.txt
+1.Clone the repository: git clone <br>
+2.Compile the code: g++ -o scheduler scheduler.cpp<br>
+3.Run the executable: ./scheduler input.text output.txt<br>
 #working
 #Round Robin Scheduling Algorithm:
 Round Robin (RR) is a preemptive scheduling algorithm where each process gets executed for a fixed time slice (quantum) in a cyclic order.
