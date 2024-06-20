@@ -14,7 +14,8 @@ Round Robin (RR) is a preemptive scheduling algorithm where each process gets ex
 4.Completion: Calculate waiting time and turnaround time for each process.<br>
 5.Output: Output average waiting time and turnaround time.<br>
 
-![image](https://github.com/Shilpamahour/CPU-scheduling-Project/assets/132204996/67e1d107-85a0-48e5-8e46-e5f608c24656)
+![image](https://github.com/Shilpamahour/CPU-scheduling-Project/assets/132204996/3a17641d-a39b-4819-afa2-d9045e77e69d)
+
 
 # explanation<br>
 1.Initialization:<br>
@@ -134,3 +135,38 @@ vii. Each process's waiting and turnaround times are updated.<br>
 
 i. Each process's waiting and turnaround times are computed using the function.<br>
 ii. The scheduling results are written to the output file, together with a Gantt chart—a visual depiction of the process execution order—and average waiting and turnaround times.<br>
+# LJF (Longest Job First)
+i. Arrival: Arrange procedures in order of arrival.<br>
+ii. Execution: Among the processes that have arrived, choose the one with the longest burst time.<br>
+iii. Completion: Determine the turnaround and waiting times for every procedure.<br>
+iv. Average waiting time and turnaround time are the outputs.<br>
+![image](https://github.com/Shilpamahour/CPU-scheduling-Project/assets/132204996/4f968797-c6b0-4057-9900-a36b0d86abe1)
+function explanation<br>
+1.Sorting Processes by Arrival Time:<br>
+
+i. In order to ascertain the order of arrival, the function first sorts the processes according to their arrival timings.<br>
+
+2.Setting Up Variables:<br>
+
+i. The execution sequence, including start and end times, is kept in a list called executions.<br>
+ii. Processes that are prepared for execution are stored in ready_queue.<br>
+iii. In the scheduling simulation, the current time is monitored by curr_time.<br>
+iv. The procedures are iterated through using idx and n.<br>
+
+3.Planning Every Procedure:<br>
+
+i. The main loop keeps going until every process has a scheduled time.<br>
+ii. The ready_queue is populated with processes that have arrived as of the current time.<br>
+iii.The current time is changed to reflect the arrival time of the next process if the ready_queue is empty.<br>
+iv. To choose the process with the longest burst time, the ready_queue is sorted in descending order by burst time.<br>
+v. The waiting time of the chosen process is determined by subtracting its arrival time from the current time when it is executed.<br>
+vi.Following execution, the current time is updated and execution data (process ID, start time, end time) are logged.<br>
+vii. For every process, the waiting and turnaround times are updated.<br>
+
+4.Writing Results and Calculating Metrics:<br>
+
+i. For every procedure, the function determines the waiting and turnaround times.<br>
+ii. The scheduling results are written to the output file, together with a Gantt chart (a graphic depiction of the process execution sequence) and average waiting and turnaround times.<br>
+![image](https://github.com/Shilpamahour/CPU-scheduling-Project/assets/132204996/73edd012-e205-4730-9523-7035d88c7b39)
+
+
