@@ -168,5 +168,9 @@ vii. For every process, the waiting and turnaround times are updated.<br>
 i. For every procedure, the function determines the waiting and turnaround times.<br>
 ii. The scheduling results are written to the output file, together with a Gantt chart (a graphic depiction of the process execution sequence) and average waiting and turnaround times.<br>
 ![image](https://github.com/Shilpamahour/CPU-scheduling-Project/assets/132204996/73edd012-e205-4730-9523-7035d88c7b39)
-
-
+# Learning Pointers
+i. knowledge of several CPU scheduling techniques and how to use C++ to implement them.
+ii. practical knowledge of operating system scheduling and process management.
+iii.The selection of an algorithm is crucial for maximizing CPU use and response time.
+# Sources and/or Bibliography
+Abraham Silberschatz, Peter Baer Galvin, and Greg Gagne's Operating System Concepts and their GeeksforGeeks articles on CPU Scheduling Algorithms
