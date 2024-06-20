@@ -1,1 +1,7 @@
-
+# algorithm predicted is SRTF
+Round Robin Scheduling (Quantum = 2):<br>
+Gantt Chart:<br>
+| P1 | P2 | P3 | P1 | P4 | P5 | P2 | P3 | P1 | P4 | P4 |<br>
+0	2	4	6	8	10	12	14	15	16	18<br>
+Average Turnaround Time: 13.4<br>
+Average Waiting Time: 9.4<br>
