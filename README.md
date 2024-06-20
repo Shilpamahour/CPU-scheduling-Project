@@ -103,3 +103,26 @@ ii)It writes the scheduling results, including the average waiting time, average
 3.Completion: Determine how long each process will take to complete, including wait times.<br>
 
 4.Output: Average waiting and turnaround times are produced.<br>
+![image](https://github.com/Shilpamahour/CPU-scheduling-Project/assets/132204996/ab4622a8-4a94-4447-a56a-b2f4b20f130d)
+<br>
+function explanation<br>
+Sorting Procedures according to Arrival Time:<br>
+
+In order to ascertain the order of arrival, the function first sorts the processes according to their arrival timings.<br>
+2. Setting Up Variables:<br>
+
+
+i. executions is a list used to keep track of the start and end times of each execution.<br>
+ii. Processes that are prepared for execution are stored in ready_queue.<br>
+In the scheduling simulation, the current time is monitored by iii.curr_time.<br>
+The procedures are iterated through using iv, idx, and n.<br>
+4.Planning Every Procedure:<br>
+
+i. The primary cycle never ends until every process has a scheduled time.<br>
+ii. The ready_queue is expanded to include processes that have arrived by the current time.<br>
+
+iii. The current time is adjusted to reflect the arrival time of the subsequent process if the ready_queue is empty.<br>
+iv. To choose the process with the shortest burst time, the ready_queue is sorted by burst time.<br>
+v. After the chosen process is carried out, its waiting time is determined by subtracting its arrival time from the current time.<br>
+vi. After execution, the current time is changed and execution information (process ID, start time, end time) are logged.<br>
+vii. Each process's waiting and turnaround times are updated.<br>
