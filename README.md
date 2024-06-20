@@ -15,6 +15,8 @@ Round Robin (RR) is a preemptive scheduling algorithm where each process gets ex
 5.Output: Output average waiting time and turnaround time.
 
 
-![image](https://github.com/Shilpamahour/CPU-scheduling-Project/assets/132204996/fbf3ecfd-e096-46da-a275-797a8aa7e0f3)
+
+![image](https://github.com/Shilpamahour/CPU-scheduling-Project/assets/132204996/902851d2-393a-437f-a1b0-37e5005ff9b1)
+
 
 
