@@ -35,6 +35,53 @@ iii)If the ready queue is empty, move to the next time unit until new processes 
 i)After all processes are executed, calculate the waiting time and turnaround time for each process.<br>
 ii)Waiting time = Total time spent in the ready queue (excluding burst time).<br>
 iii)Turnaround time = Waiting time + Burst time.<br>
+#FCFS (First-Come, First-Served)<br>
+i)Arrival: Sort processes by arrival time.<br>
+ii)Execution: Execute processes in the order they arrive.<br>
+iii)Completion: Calculate waiting time and turnaround time for each process.<br>
+iv)Output: Output average waiting time and turnaround time.<br>
 
+Function Explanation<br>
+1.Sorting Processes:<br>
 
+i)The function begins by sorting the processes based on their arrival times to ensure they are scheduled in the order they arrive.<br>
+2.Initializing Variables:<br>
 
+i)A list is created to store the execution order, including start and end times.<br>
+ii)The current time is initialized to 0.<br>
+3.Scheduling Each Process:<br>
+
+i)For each process, if the current time is less than the process's arrival time, the current time is updated to the process's arrival time (simulating idle CPU time).<br>
+ii)The waiting time for each process is calculated as the difference between the current time and the arrival time.<br>
+iii)The execution details (process ID, start time, end time) are recorded, and the current time is updated after the process's burst time (execution duration).<br>
+4.Calculating Metrics and Writing Results:<br>
+
+i)The function calculates the waiting and turnaround times for each process.<br>
+ii)It writes the scheduling results, including the average waiting time, average turnaround time, and a Gantt chart (visual representation of the process execution order), to the output file.<br>
+
+#SRTF (Shortest Remaining Time First)<br>
+i)Arrival: Sort processes by arrival time.<br>
+ii)Execution: Select the process with the shortest remaining time among the arrived processes.<br>
+iii)Preemption: If a shorter job arrives, preempt the current job.<br>
+iv)Completion: Calculate waiting time and turnaround time for each process.<br>
+v)Output: Output average waiting time and turnaround time.<br>
+Function Explanation
+1.Initializing Variables:<br>
+
+i)executions is a list to store the execution order with start and end times.<br>
+ii)curr tracks the current time in the scheduling simulation.<br>
+iii)comp counts the number of completed processes.<br>
+iv)n is the total number of processes.<br>
+2.Scheduling Each Process:<br>
+
+i)The main loop continues until all processes are completed.<br>
+ii)For each time unit, the process with the shortest remaining time that has arrived by the current time is selected.<br>
+iii)If no such process is found, the current time is incremented.<br>
+iv)The selected process is executed for one time unit, and its remaining time is decremented.<br>
+v)Execution details (process ID, start time, end time) are recorded.<br>
+vi)If a process completes (remaining time becomes zero), its waiting time is calculated as the difference between the current time (plus one), its arrival time, and its burst time.<br>
+vii)The current time is incremented after each time unit of execution.<br>
+3.Calculating Metrics and Writing Results:<br>
+
+i)The function calculates the waiting and turnaround times for each process.<br>
+ii)It writes the scheduling results, including the average waiting time, average turnaround time, and a Gantt chart (visual representation of the process execution order), to the output file.<br>
